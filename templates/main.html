@@ -1,0 +1,18 @@
+{% extends "Base.html" %}
+{% load static %}
+
+{% block title %}
+Main Page
+{% endblock title %}
+
+{% block content %}
+<div id="alert-box"></div>
+<div id="messages-box"></div>
+
+<input type="text" id="message-input" class="form-control" placeholder="your message">
+ <button id="send-btn" class="btn btn-primary mt-2">Send</button>
+{% endblock content %}
+
+ {% block scripts %}
+     <script src="{% static 'RealtimeChatApp/main.js' %}"></script>
+ {% endblock scripts %}
